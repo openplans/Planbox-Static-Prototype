@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html dir="ltr" lang="en-US" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html dir="ltr" lang="en-US" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html dir="ltr" lang="en-US" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html dir="ltr" lang="en-US" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html dir="ltr" lang="en-US"> <!--<![endif]-->
+
+<head>
+  <title>Main Street Pedestrian Improvements</title>
+
+  <meta charset="utf-8">
+  <meta name="description" content="Main Street Pedestrian Improvements">
+  <meta name="author" content="OpenPlans">
+
+  <!--  Mobile Viewport Fix -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <!-- Favicon & Progressively-Enhanced Touch Icons: http://mathiasbynens.be/notes/touch-icons#sizes -->
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+
+  <!-- Google Web Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:100,400,800,400italic,800italic,100italic' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="normalize.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="style.css" type="text/css" media="screen, projection" />
+
+  <!-- Remove this if Modernizer is used. -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+
+<header class="project-header" style="background-image:url(images/pedestrians.jpg);">
+  <div class="container">
+    <h1 class="project-title">Main Street Pedestrian Improvements</h1>
+  </div>
+</header>
+
+<section class="project-details">
+  <div class="container">
+    <p class="project-status project-status-active"><strong>Active</strong></p>
+    <p class="project-location">Anytown, USA</p>
+    <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+</section>
+
+<section class="project-timeline">
+  <div class="container">
+    <ol class="event-list unstyled-list">
+      <li class="event event-complete">
+        <h1 class="event-title">Event Title (January 4, 2015)</h1>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </li>
+      <li class="event event-active">
+        <h1 class="event-title">Winter 2015 Phase</h1>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </li>
+      <li class="event">
+        <h1 class="event-title">Another Event (April 2, 2015)</h1>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+      </li>
+      <li class="event">
+        <h1 class="event-title">Yet one more event for the list. This one's a long one. Friday, April 16, 2pm-5pm</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </li>
+      <li class="event">
+        <h1 class="event-title">Phase II, Summer 2015</h1>
+        <p>Excepteur sint occaecat cupidatat non proident.</p>
+      </li>
+      <li class="event">
+        <h1 class="event-title">Event Title</h1>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </li>
+      <li class="event">
+        <h1 class="event-title">Estimated Completion: October 31, 2015</h1>
+        <p></p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<footer class="project-colophon">
+  <div class="container">
+    <p class="project-contact-info">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+</footer>
+
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="html5sortable/jquery.sortable.js"></script>
+<script>
+  $( document ).ready(function() {
+
+    if (window.location.hash == "#admin") {
+      $('.project-header').addClass('logged-in').before('<div class="admin-bar">Signed in as <a href="#"><strong>Username</strong></a>. <a href="#" class="logout">Sign Out</a></div>');
+      $('p:not(.project-status), h1, h2, h3, h4, h5, h6').attr('contenteditable','true').addClass('content-editable');
+      $('.event').addClass('draggable').append('<span class = "handle">&#8801;</span>');
+      $('.event-list').sortable({
+				handle: '.handle'
+			});
+			$('.project-timeline .container').append('<a href="#" class="btn btn-small add-event-btn">Add Event</a>')
+			$('.project-status').append('<select class="status-selector"><option>Not Started</option><option selected="selected">Active</option><option>Complete</option></select>');
+    }
+
+  });
+</script>
+
+</body>
+</html>
