@@ -300,8 +300,25 @@ li.event {
   color: #ddd;
   font-weight: 800;
 }
+.project-colophon a, .project-colophon a:active, .project-colophon a:visited {
+  color: #48a5bf;
+  text-decoration: none;
+}
+.project-colophon a:hover {
+  text-decoration: underline;
+}
 .project-contact-info {
   font-size: 1.325em;
+}
+.powered-by {
+  text-align: right;
+  font-size: 0.875em;
+  font-weight: 100;
+  color: #ccc;
+  padding-top: 2em;
+}
+.powered-by a {
+  font-weight: 400;
 }
 
 
