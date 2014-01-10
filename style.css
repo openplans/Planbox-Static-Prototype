@@ -133,12 +133,12 @@ img {
 form {
 }
 label {
-  background: #a1cbcf;
-  float: left;
-  padding: 0.25em 1em 0 0.75em;
-  color: #fff;
-  font-size: 0.875em;
-  border-radius: 0.25em 0.625em 0 0;
+/*  background: #a1cbcf;*/
+/*  float: left;*/
+/*  padding: 0.25em 1em 0 0.75em;*/
+/*  color: #fff;*/
+/*  font-size: 0.875em;*/
+/*  border-radius: 0.25em 0.625em 0 0;*/
 }
 .input-block,
 textarea {
@@ -209,15 +209,28 @@ body {
 	        box-sizing: border-box;
 }
 .main {
+  background: #eee url(images/workers.jpg) center center repeat;
+  background-size: cover;
+  color: #666;
+  padding: 1em 0;
+}
+.main h1,.main h2,.main h3,.main h4,.main h5,.main h6,
+.secondary h1,.secondary h2,.secondary h3,.secondary h4,.secondary h5,.secondary h6 {
+  text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+}
+.main a, .secondary a { color: #48a5bf; }
+.main a:hover, .secondary a:hover { color: #18758f; }
+
+.secondary {
+  background: #ddd;
+  color: #666;
+  padding: 1em 0;
+}
+.tertiary {
   background: #eee;
   color: #666;
   padding: 1em 0;
 }
-.main h1,.main h2,.main h3,.main h4,.main h5,.main h6 {
-  text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
-}
-.main a { color: #48a5bf; }
-.main a:hover { color: #18758f; }
 
 
 /* =Site/Project Header
@@ -272,7 +285,12 @@ body {
 }
 
 .product-details {
-  font-weight: 100;
+/*  font-weight: 100;*/
+  background: #eee;
+  background: rgba(255,255,255,0.75);
+  color: #444;
+  padding: 1em;
+  border-radius: 0.25em;
 }
 
 
@@ -369,7 +387,7 @@ li.event {
   font-weight: 800;
 }
 .project-colophon a, .project-colophon a:active, .project-colophon a:visited {
-  color: #48a5bf;
+  color: #fff;
   text-decoration: none;
 }
 .project-colophon a:hover {
@@ -490,12 +508,17 @@ li.sortable-placeholder {
     padding-top: 2em;
     padding-bottom: 1em;
   }
+  .big-p {
+    font-size: 1.25em;
+  }
 }
 
 @media only screen and (min-width: 44em) {
-  .site-header,
   .project-header {
     padding-top: 5em;
+  }
+  .site-header {
+    padding-top: 3em;
   }
   .site-title,
   .project-title {
@@ -535,5 +558,8 @@ li.sortable-placeholder {
   }
   .interest-form p.submit .btn-block {
     border-radius: 0 0.25em 0.25em 0;
+  }
+  .big-p {
+    font-size: 1.5em;
   }
 }
