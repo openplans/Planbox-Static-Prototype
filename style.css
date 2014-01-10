@@ -491,6 +491,14 @@ li.sortable-placeholder {
 .status-selector {
   cursor: pointer;
 }
+.save-bar {
+  background: #444;
+  color: #eee;
+  padding: 0;
+  box-shadow: 0 0.5em 0.5em rgba(0,0,0,0.5);
+  position: relative;
+  z-index: 9999;
+}
 
 
 /* =Media Queries for Responsive Layout
@@ -565,6 +573,23 @@ li.sortable-placeholder {
     right: 0;
     bottom: auto;
     left: 0;
+  }
+  .save-bar {
+    position: fixed;
+    top: -0.5em;
+    right: 0;
+    bottom: auto;
+    left: 0;
+    height: 0;
+    overflow: visible;
+    background: transparent;
+    box-shadow: none;
+  }
+  .save-bar .container {
+    max-width: 18em;
+  }
+  .save-btn {
+    box-shadow: 0 0.25em 0.5em rgba(0,0,0,0.5);
   }
   .interest-form p.email {
     width: 65%;

@@ -100,7 +100,8 @@
 
     if (window.location.hash == "#admin") {
       $('.project-header').addClass('logged-in').before('<div class="admin-bar">Signed in as <a href="#"><strong>Username</strong></a>. <a href="#" class="logout">Sign Out</a></div>');
-      $('p:not(.project-status), h1, h2, h3, h4, h5, h6').attr('contenteditable','true').addClass('content-editable');
+      $('.project-colophon').after('<div class="save-bar"><div class="container"><a href="#" class="save-btn btn btn-block btn-large">Save Project</a></div></div>');
+      $('p:not(.project-status,.powered-by), h1, h2, h3, h4, h5, h6').attr('contenteditable','true').addClass('content-editable');
       $('.event').addClass('draggable').append('<span class="handle">&#8801;</span>').append('<span class="delete"><span class="delete-icon">&times;</span> Delete</span>');
       $('.event-list').sortable({
 				handle: '.handle'
