@@ -77,6 +77,11 @@ img {
   opacity: 0.75;
 }
 
+.illustration {
+  display: block;
+  margin: 0 auto;
+}
+
 /* Buttons */
 .btn,
 .btn:visited,
@@ -543,6 +548,14 @@ li.sortable-placeholder {
   .big-p {
     font-size: 1.25em;
   }
+  .illustration {
+    float: left;
+    margin: 0 1em 0.5em 0;
+    opacity: 0.75;
+  }
+  .form-prompt {
+    font-size: 1.5em;
+  }
 }
 
 @media only screen and (min-width: 44em) {
@@ -610,5 +623,8 @@ li.sortable-placeholder {
   }
   .big-p {
     font-size: 1.5em;
+  }
+  .form-prompt {
+    font-size: 1.75em;
   }
 }
