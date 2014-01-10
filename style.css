@@ -488,6 +488,9 @@ li.sortable-placeholder {
   font-size: 1.5em;
   position: relative;
 }
+.status-selector {
+  cursor: pointer;
+}
 
 
 /* =Media Queries for Responsive Layout
