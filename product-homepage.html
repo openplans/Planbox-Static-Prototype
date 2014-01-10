@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html dir="ltr" lang="en-US" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html dir="ltr" lang="en-US" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html dir="ltr" lang="en-US" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html dir="ltr" lang="en-US" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html dir="ltr" lang="en-US"> <!--<![endif]-->
+
+<head>
+  <title>Main Street Pedestrian Improvements</title>
+
+  <meta charset="utf-8">
+  <meta name="description" content="Main Street Pedestrian Improvements">
+  <meta name="author" content="OpenPlans">
+
+  <!--  Mobile Viewport Fix -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <!-- Favicon & Progressively-Enhanced Touch Icons: http://mathiasbynens.be/notes/touch-icons#sizes -->
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+
+  <!-- Google Web Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:100,400,800,400italic,800italic,100italic' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="normalize.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="style.css" type="text/css" media="screen, projection" />
+
+  <!-- Remove this if Modernizer is used. -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <h1 class="site-title"><span class="site-logo">&#9649;</span>&nbsp;Planbox</h1>
+    <!-- &#9640;&#9649;&#9648;&#9725;&#9726; -->
+    <h2 class="site-description">One-click Planning Project Promotion</h2>
+  </div>
+</header>
+
+<section class="main">
+  <div class="container">
+    <div class="product-details">
+      <h3>"What's going on here?" <small style="white-space:nowrap;">&ndash;&nbsp;Citizens</small></h3>
+      <p>Your planning project is damaged by people not having the right info. Planbox gets your project information out into the world, making it easier for people to discover and stay informed.</p>
+      <a href="signup.html" class="btn btn-large btn-block">Sign up!</a>
+    </div>
+  </div>
+</section>
+
+<footer class="project-colophon">
+  <div class="container">
+    <p class="powered-by"><a href="product-homepage.html">Planbox</a> is a product of <a href="http://openplans.org/">OpenPlans</a>.</p>
+  </div>
+</footer>
+
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="html5sortable/jquery.sortable.js"></script>
+<script>
+  $( document ).ready(function() {
+
+    if (window.location.hash == "#admin") {
+      $('.project-header').addClass('logged-in').before('<div class="admin-bar">Signed in as <a href="#"><strong>Username</strong></a>. <a href="#" class="logout">Sign Out</a></div>');
+    }
+
+  });
+</script>
+
+</body>
+</html>

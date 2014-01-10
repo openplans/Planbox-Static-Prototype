@@ -3,8 +3,15 @@
 -------------------------------------------------------------- */
 
 /* Typography */
-body { line-height: 1.5; }
-body, select, input, textarea {
+body { 
+  background: #666;
+  color: #fff;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.5; 
+}
+select, input, textarea {
+  background: #fff;
   color: #666;
   font-family: 'Alegreya Sans', sans-serif;
   font-weight: 400;
@@ -23,7 +30,7 @@ h5 { font-size: 1.25em; }
 h6 { font-size: 1em; text-transform: uppercase; }
 
 a:hover, a:active { outline: none; }
-a, a:active, a:visited { color: #268099; }
+a, a:active, a:visited { color: LightBlue; }
 a:hover { color: #48a5bf; }
 p { margin: 0 0 1.2em; }
 ul, ol { margin-left: 1.8em; }
@@ -64,7 +71,7 @@ img {
 .icon-inline {
   height: 1.5em;
   width: auto;
-  margin: 0 0.25em -0.325em 0.5em;
+  margin: 0 0.25em -0.375em 0.5em;
 }
 .icon-muted {
   opacity: 0.75;
@@ -77,7 +84,7 @@ img {
   display: inline-block;
   *display: inline;
   *zoom: 1;
-  padding: 0.325em 0.5em 0.125em;
+  padding: 0.375em 0.5em 0.125em;
   margin-bottom: 0;
   text-align: center;
   vertical-align: middle;
@@ -190,11 +197,22 @@ body {
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
 }
+.main {
+  background: #eee;
+  color: #666;
+  padding: 1em 0;
+}
+.main h1,.main h2,.main h3,.main h4,.main h5,.main h6 {
+  text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+}
+.main a, .main a:active, .main a:visited { color: #48a5bf; }
+.main a:hover { color: #18758f; }
 
 
-/* =Project Header
+/* =Site/Project Header
 -------------------------------------------------------------- */
 
+.site-header,
 .project-header {
   background: #666;
   color: #fff;
@@ -203,9 +221,47 @@ body {
   background-repeat: repeat;
   background-size: cover;
 }
+.site-title,
 .project-title {
   font-weight: 800;
   margin-bottom: 0;
+}
+.site-logo {
+  font-size: 1.375em;
+  text-shadow: 0 0.125em 0 rgba(255,255,255,0.5), 0 0.25em 0 rgba(255,255,255,0.25), 0 0.375em 0 rgba(255,255,255,0.125);
+  font-weight: 100;
+  -webkit-animation: shadowloop 4s infinite; /* Safari 4+ */
+  -moz-animation:    shadowloop 4s infinite; /* Fx 5+ */
+  -o-animation:      shadowloop 4s infinite; /* Opera 12+ */
+  animation:         shadowloop 4s infinite; /* IE 10+ */
+}
+@-webkit-keyframes shadowloop {
+  0%   { text-shadow: 0 0.125em 0 rgba(255,255,255,0.5), 0 0.25em 0 rgba(255,255,255,0.25), 0 0.375em 0 rgba(255,255,255,0.125); }
+  50% { text-shadow: 0 0.125em 0 rgba(255,255,255,0.625), 0 0.25em 0 rgba(255,255,255,0.375), 0 0.375em 0 rgba(255,255,255,0.25); }
+  100%   { text-shadow: 0 0.125em 0 rgba(255,255,255,0.5), 0 0.25em 0 rgba(255,255,255,0.25), 0 0.375em 0 rgba(255,255,255,0.125); }
+}
+@-moz-keyframes shadowloop {
+  0%   { text-shadow: 0 0.125em 0 rgba(255,255,255,0.5), 0 0.25em 0 rgba(255,255,255,0.25), 0 0.375em 0 rgba(255,255,255,0.125); }
+  50% { text-shadow: 0 0.125em 0 rgba(255,255,255,0.625), 0 0.25em 0 rgba(255,255,255,0.375), 0 0.375em 0 rgba(255,255,255,0.25); }
+  100%   { text-shadow: 0 0.125em 0 rgba(255,255,255,0.5), 0 0.25em 0 rgba(255,255,255,0.25), 0 0.375em 0 rgba(255,255,255,0.125); }
+}
+@-o-keyframes shadowloop {
+  0%   { text-shadow: 0 0.125em 0 rgba(255,255,255,0.5), 0 0.25em 0 rgba(255,255,255,0.25), 0 0.375em 0 rgba(255,255,255,0.125); }
+  50% { text-shadow: 0 0.125em 0 rgba(255,255,255,0.625), 0 0.25em 0 rgba(255,255,255,0.375), 0 0.375em 0 rgba(255,255,255,0.25); }
+  100%   { text-shadow: 0 0.125em 0 rgba(255,255,255,0.5), 0 0.25em 0 rgba(255,255,255,0.25), 0 0.375em 0 rgba(255,255,255,0.125); }
+}
+@keyframes shadowloop {
+  0%   { text-shadow: 0 0.125em 0 rgba(255,255,255,0.5), 0 0.25em 0 rgba(255,255,255,0.25), 0 0.375em 0 rgba(255,255,255,0.125); }
+  50% { text-shadow: 0 0.125em 0 rgba(255,255,255,0.625), 0 0.25em 0 rgba(255,255,255,0.375), 0 0.375em 0 rgba(255,255,255,0.25); }
+  100%   { text-shadow: 0 0.125em 0 rgba(255,255,255,0.5), 0 0.25em 0 rgba(255,255,255,0.25), 0 0.375em 0 rgba(255,255,255,0.125); }
+}
+
+.site-description {
+  font-weight: 400;
+}
+
+.product-details {
+  font-weight: 100;
 }
 
 
@@ -214,6 +270,7 @@ body {
 
 .project-details {
   background: #eee;
+  color: #666;
 }
 .project-details .container {
   position: relative;
@@ -222,7 +279,7 @@ body {
 .project-status {
   text-align: center;
   line-height: 1.25;
-  padding: 0.325em 0;
+  padding: 0.375em 0;
   background: #ddd;
   margin: -0.5em -0.5em 1em -0.5em;
 }
@@ -308,7 +365,7 @@ li.event {
   text-decoration: underline;
 }
 .project-contact-info {
-  font-size: 1.325em;
+  font-size: 1.375em;
 }
 .powered-by {
   text-align: right;
@@ -393,11 +450,16 @@ li.sortable-placeholder {
 -------------------------------------------------------------- */
 
 @media only screen and (min-width: 22em) {
+  .site-header,
   .project-header {
     padding-top: 2em;
   }
+  .site-title,
   .project-title {
     font-size: 3em;
+  }
+  .product-details {
+    font-size: 1.25em;
   }
   .project-status {
     position: absolute;
@@ -408,7 +470,7 @@ li.sortable-placeholder {
     margin: 0;
   }
   .project-status strong {
-    font-size: 1.325em;
+    font-size: 1.375em;
   }
   .project-location {
     font-size: 1.5em;
@@ -420,11 +482,16 @@ li.sortable-placeholder {
 }
 
 @media only screen and (min-width: 44em) {
+  .site-header,
   .project-header {
     padding-top: 5em;
   }
+  .site-title,
   .project-title {
     font-size: 4em;
+  }
+  .product-details {
+    font-size: 1.5em;
   }
   .project-status strong {
     font-size: 1.625em;
