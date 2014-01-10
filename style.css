@@ -238,7 +238,7 @@ body {
 
 .site-header,
 .project-header {
-  background: #666;
+  background: #268099;
   color: #fff;
   padding: 1em 0;
   background-position: center center;
@@ -378,20 +378,26 @@ li.event {
 }
 
 
-/* =Project Colophon
+/* =Colophon
 -------------------------------------------------------------- */
 
-.project-colophon {
+.project-colophon,
+.site-colophon {
   padding-top: 1em;
   background: #666;
   color: #ddd;
   font-weight: 800;
 }
-.project-colophon a, .project-colophon a:active, .project-colophon a:visited {
+.site-colophon {
+  background: #407280;
+}
+.project-colophon a, .project-colophon a:active, .project-colophon a:visited,
+.site-colophon a, .site-colophon a:active, .site-colophon a:visited {
   color: #fff;
   text-decoration: none;
 }
-.project-colophon a:hover {
+.project-colophon a:hover,
+.site-colophon a:hover {
   text-decoration: underline;
 }
 .project-contact-info {
