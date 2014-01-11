@@ -418,7 +418,11 @@ li.event {
 .powered-by a {
   font-weight: 400;
 }
-
+.openplans-logo {
+  width: 236px;
+  height: auto;
+  margin: 0 0.5em 0.5em 0;
+}
 
 /* =Admin
 -------------------------------------------------------------- */
@@ -551,7 +555,7 @@ li.sortable-placeholder {
   .illustration {
     float: left;
     margin: 0 1em 0.5em 0;
-    opacity: 0.75;
+    opacity: 0.625;
   }
   .form-prompt {
     font-size: 1.5em;
@@ -626,5 +630,13 @@ li.sortable-placeholder {
   }
   .form-prompt {
     font-size: 1.75em;
+  }
+  .openplans-logo {
+    float: left;
+  }
+  .funding-p {
+    margin-left: 236px;
+    padding-left: 1.5em;
+    font-size: 1.25em;
   }
 }
